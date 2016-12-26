@@ -94,7 +94,7 @@ def producehtml(name, debug):
 <a href="%s" target="_blank" class="btn btn-danger btn-md">%s</a>
 <p><span class="glyphicon glyphicon-bitcoin">%s</span>  %s</p>
 <!-- <img src="bitcoin.png" /> -->
-<a href="http://umzw27abk77o4vml.onion/my-libre-cam.zip" class="btn btn-danger btn-xs source" ><span class="glyphicon glyphicon-camera"></span> Broadcast Now (alpha 0.1)</a>
+<a href="https://github.com/porn-libre/my-libre-cam" target="_blank" class="btn btn-danger btn-xs source" ><span class="glyphicon glyphicon-camera"></span> Broadcast Now (alpha 0.1)</a>
 </div>
 </div>
 <script>

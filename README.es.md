@@ -6,6 +6,7 @@ Mi cámara libre
 Es un clon libre y distribuido de cam4.com y myfreecams.com entre otros.
 
 * Crea tu propia página para transmitir tu webcam en vivo
+* Corre sobre tor es un servicio P2P
 * Chatea con tus espectadores
 * Recibí propinas o donaciones en bitcoins sin intermediarios
 

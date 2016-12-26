@@ -6,6 +6,7 @@ My Free Cam
 It is a free clone and distributed of cam4.com and myfreecams.com among others.
 
 * It creates your own page to transmit your live webcam
+* Run over tor (P2P)
 * Chatea with your spectators
 * Received tips or donations in bitcoins without intermediaries
 
