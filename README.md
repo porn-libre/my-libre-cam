@@ -1,6 +1,8 @@
 My Free Cam
 ===========
 
+![](screenshot/screenshot1.png)
+
 It is a free clone and distributed of cam4.com and myfreecams.com among others.
 
 * It creates your own page to transmit your live webcam

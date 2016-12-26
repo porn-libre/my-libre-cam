@@ -1,6 +1,8 @@
 Mi cámara libre
 ===============
 
+![](screenshot/screenshot1.png)
+
 Es un clon libre y distribuido de cam4.com y myfreecams.com entre otros.
 
 * Crea tu propia página para transmitir tu webcam en vivo
