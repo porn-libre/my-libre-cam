@@ -1,0 +1,39 @@
+tab_border=c,2F2F2F,front
+tab_text=c,969696,front
+tab_hover=c,2F2F2F,back
+tab_selected=c,2F2F2F,back
+tab_selected_border=c,2F2F2F,back
+tab_selected_text=c,ffffff,front
+input_border=c,E9E9E9,front
+menu_border=c,2F2F2F,front
+menu_background=c,2F2F2F,back
+menu_hover_background=c,2F2F2F,back
+menu_text=c,969696,front
+lastpositionbar=c,C8D2DC,front
+lines_text=c,333333,front
+lines_background=c,f2f0ff,back
+
+.qwebirc-qui .lines {
+  color: $(lines_text);
+  overflow: auto;
+  /* font-size: 0.8em; */
+  background: $(lines_background);
+}
+
+.qwebirc-qui .lines .timestamp {
+  display: $(timestamp_display);
+}
+
+.qwebirc-qui .ircwindow div {
+  text-indent: $(timestamp_text_indent);
+  padding-left: $(timestamp_padding_left);
+  word-wrap: break-word;
+  margin-right: 8px;
+}
+
+.qwebirc-qui hr.lastpos {
+  border: none;
+  border-top: 1px solid $(lastpositionbar);
+  margin-left: 3em;
+  margin-right: 3em;
+}
