@@ -14,11 +14,17 @@ Instalar
 --------
 
 ~~~
-sudo apt-get install python python-twisted python-twisted-bin python-twisted-core python-twisted-runner python-twisted-names \
-python-twisted-mail python-twisted-words python-twisted-web python-zope.interface ngircd vlc-nox tor qrencode
+sudo apt-get install python python-twisted python-twisted-bin \
+python-twisted-core python-twisted-runner python-twisted-names \
+python-twisted-mail python-twisted-words python-twisted-web \
+python-zope.interface ngircd vlc-nox tor qrencode
 ~~~
 
 Si tu no tienes un billetera de bitcoin instala [electrum](https://electrum.org/) solo tiene que importa la llave privada en el archivo address
+
+~~~
+sudo pip install bitcoin
+~~~
 
 Ejecutar
 --------

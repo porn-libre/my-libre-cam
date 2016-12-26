@@ -13,11 +13,17 @@ Install
 -------
 
 ~~~
-sudo apt-get install python python-twisted python-twisted-bin python-twisted-core python-twisted-runner python-twisted-names \
-python-twisted-mail python-twisted-words python-twisted-web python-zope.interface ngircd vlc-nox tor qrencode
+sudo apt-get install python python-twisted python-twisted-bin \
+python-twisted-core python-twisted-runner python-twisted-names \
+python-twisted-mail python-twisted-words python-twisted-web \
+python-zope.interface ngircd vlc-nox tor qrencode
 ~~~
 
 If your do not have a wallet of bitcoin installs [electrum](https://electrum.org) and import private address
+
+~~~
+sudo pip install bitcoin
+~~~
 
 Run
 ---
