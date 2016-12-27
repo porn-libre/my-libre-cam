@@ -85,7 +85,7 @@ def producehtml(name, debug):
     </noscript>%s
   </div>
 <div id="webcam">
-<img src="%s" id="imagen" class="img-responsive imageClip" onerror="this.src='error.jpg';" ></img>
+<img src="%s" id="imagen" class="img-responsive imageClip" onerror="this.src='error.jpg';" />
 <audio src="%s" id="audio" autoplay hidden="hidden"  ></audio>
 <div><b>%s</b>
 <a href="%s" target="_blank" class="btn btn-primary btn-lg">%s</a>
@@ -94,6 +94,7 @@ def producehtml(name, debug):
 <a href="%s" target="_blank" class="btn btn-danger btn-md">%s</a>
 <p><span class="glyphicon glyphicon-bitcoin">%s</span>  %s</p>
 <!-- <img src="bitcoin.png" /> -->
+<a href="http://gln7dm4pgfzax5hc.onion/"><img src="" id="flag" /></a>
 <a href="https://github.com/porn-libre/my-libre-cam" target="_blank" class="btn btn-danger btn-xs source" ><span class="glyphicon glyphicon-camera"></span> Broadcast Now (alpha 0.1)</a>
 </div>
 </div>
@@ -101,6 +102,7 @@ def producehtml(name, debug):
 function refresh () {setTimeout(function (){$("imagen").src=url_imagen+"?"+Math.random(); refresh(); $("audio").src=$("audio").src + "?" + Math.random(); }, 20000);}
 refresh();
 var url_imagen=$("imagen").src;
+$("flag").src="http://gln7dm4pgfzax5hc.onion/" + window.location.href;
 </script>
 </body>
 </html>
