@@ -9,7 +9,7 @@ killall vlc
 
 PORTV=9091
 PORTA=9092
-CODE="#transcode{vcodec=MJPG,width=528,vb=1250,fps=5,venc=ffmpeg{strict=1}}:standard{access=http{mime=multipart/x-mixed-replace;boundary=--7b3cc56e5f51db803f790dad720ed50a},mux=mpjpeg,dst=127.0.0.1:${PORTV}/cam.mjpg"
+CODE="#transcode{vcodec=MJPG,width=528,vb=1250,fps=5,venc=ffmpeg{strict=1},sfilter=logo}:standard{access=http{mime=multipart/x-mixed-replace;boundary=--7b3cc56e5f51db803f790dad720ed50a},mux=mpjpeg,dst=127.0.0.1:${PORTV}/cam.mjpg"
 
 echo "tor"
 
@@ -51,15 +51,16 @@ sed -i "s/^WEBCAM.*$/WEBCAM=\"http:\/\/$(cat broadcast/hostname):81\/cam.mjpg\"/
 sed -i "s/^AUDIO.*$/AUDIO=\"http:\/\/$(cat broadcast/hostname):82\/audio.ogg\"/g" config.py
 
 # generate bitcoin address
-[ ! -f "address" ] && ./bin/address.py > address
+[ ! -f "address" ]&& ./bin/address.py > address
 ADDRESS=$(cat address)
-sed -i "s/^BITCOIN.*$/BITCOIN=$(echo "$ADDRESS" | head -n1)/g" config.py
+sed -i "s/^BITCOIN=.*$/BITCOIN=$(echo "$ADDRESS" | head -n1)/g" config.py
 
 echo "web"
 
 ./run.py 2> /dev/null 1> /dev/null
 
 echo "URL: http://$(cat broadcast/hostname) open in torbrowser"
+echo "private key: $(echo "$ADDRESS" | head -n1)"
 
 [ ! "$(which qrencode)" == "" ] && grep "^BITCOIN" config.py | cut -d= -f2 | sed 's/[^0-9A-Za-z]//g; s/^/bitcoin:/g' | qrencode -o static/bitcoin.png
 [ ! "$(which qrencode)" == "" ] && grep "^BITCOIN" config.py | cut -d= -f2 | sed 's/[^0-9A-Za-z]//g; s/^/bitcoin:/g' | qrencode -s 2 -o qr.png --background=FFFFFFAA
