@@ -50,10 +50,6 @@ rm -r ./compiled/ 2> /dev/null 1> /dev/null
 sed -i "s/^WEBCAM.*$/WEBCAM=\"http:\/\/$(cat broadcast/hostname):81\/cam.mjpg\"/g" config.py
 sed -i "s/^AUDIO.*$/AUDIO=\"http:\/\/$(cat broadcast/hostname):82\/audio.ogg\"/g" config.py
 
-# generate bitcoin address
-[ ! -f "address" ]&& ./bin/address.py > address
-ADDRESS=$(cat address)
-sed -i "s/^BITCOIN=.*$/BITCOIN=$(echo "$ADDRESS" | head -n1)/g" config.py
 
 echo "web"
 
