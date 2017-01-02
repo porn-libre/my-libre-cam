@@ -34,3 +34,5 @@ Read and configure config.py
 ~~~
 ./my-libre-cam.sh
 ~~~
+
+Donations bitcoin:13b3LtSpCfHi3sgYMPsHxsccmWgkWon7TC

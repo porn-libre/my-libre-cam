@@ -35,3 +35,5 @@ Lee y modifica el archivo config.py
 ~~~
 ./my-libre-cam.sh
 ~~~
+
+Donation bitcoin: 13b3LtSpCfHi3sgYMPsHxsccmWgkWon7TC
